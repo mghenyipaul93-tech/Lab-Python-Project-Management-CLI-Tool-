@@ -14,7 +14,7 @@ class User(Person):
         self.id = User.id_counter
         User.id_counter += 1
         self.email = email
-        self.projects = []  # one-to-many relationship
+        self.projects = [] 
 
     def add_project(self, project):
         self.projects.append(project)
@@ -62,9 +62,6 @@ class Project:
 
 
 class Task:
-    """
-    Represents a task inside a project.
-    """
 
     id_counter = 1
 
